@@ -1,2 +1,3 @@
-这是置顶测试文件
-萨达四大
+<html ng-app="">
+	<body></body>
+</html>
