@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"  ng-app id="ng-app" >
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>主页</title>
+ </head>
+ <body>
+	<a href="">笔记</a>
+ 	<p>名字 : <input type="text" ng-init="name='请输入姓名';name2=123"  ng-model="name"></p>
+	<!--绑定或获取变量名的方式-->
+ 	<p>Hello {{name}}</p>
+	<p ng-bind="name"></p>
+	<input type="text" name="name2" ng-model="name2" />
+	
+	
+	<div ng-app="" ng-init="firstName='John'">
+     <p>在输入框中尝试输入：</p>
+     <p>姓名：<input type="text" ng-model="firstName"></p>
+     <p>你输入的为： {{ firstName }}</p>
+	</div>
+	<div ng-app="">
+		<p>第二个ng-app="app1"<p>
+		<p><input type="text" ng-model="firstName"></p>
+	</div>
+
+	重复 HTML 元素
+	ng-repeat 指令会重复一个 HTML 元素：
+	AngularJS 实例
+	<div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+	  <p>使用 ng-repeat 来循环数组</p>
+	  <ul>
+		<li ng-repeat="x in names">
+		  {{ x }}
+		</li>
+	  </ul>
+	</div>
+  <script src="../angular.min.js"></script>
+ </body>
+</html>
