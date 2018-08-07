@@ -40,3 +40,12 @@ git log --pretty=oneline  查看提交历史，并且显示更清楚一些
 git add是将当前状态加入到暂缓区，后来的修改不会被commit提交出去
 可以提交前通过git  add将多次修改的内容合并后再次提交，如下：
 第一次修改 -> git add -> 第二次修改 -> git add -> git commit
+
+笔记五 撤销修改
+命令git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+
+总之，就是让这个文件回到最近一次git commit或git add时的状态。
